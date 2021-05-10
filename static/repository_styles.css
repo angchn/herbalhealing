@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+}
+
+#bar {
+    background-color: #acdbbb;
+    height: 90px;
+}
+
+#heading {
+    width: 80%;
+    margin: auto;
+}
+
+#title {
+    float: none;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    padding: 10px;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+#subtitle {
+    float: none;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    margin-left: auto;
+    display: inline-block;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.menu {
+    float: right;
+    padding: 10px;
+    margin-top: 24px;
+}
+
+#button_home {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 15px;
+    border: none;
+    padding: 2px;
+    background: none;
+    width: 50px;
+    float: right;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#button_home:hover{
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+}
+
+#page {
+    width: 80%;
+    margin: auto;
+}
+
+#page_name {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+
+#sort {
+    width: 89%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#filter {
+    color: black;
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid lightgray;
+    background-color: white;
+    transition-duration: 0.2s;
+}
+
+#filter-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#filter-content {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#filter-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+#filter-content a:hover {background-color: #ddd;}
+
+#filter-dropdown:hover #filter-content {display: block;}
+
+#filter-dropdown:hover #filter {background-color: lightgrey;}
+
+#option-content {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 12px;
+    display: none;
+    position: relative;
+    left: 160px;
+    bottom: 40px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+}
+
+#option-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.2s;
+}
+
+#option-content a:hover {background-color: #ddd;}
+
+#filter-content:hover #option-content {display: block;}
+
+#searchbar{
+    float: right;
+}
+
+#search {
+    padding: 12px;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-color: lightgrey;
+    border-style: solid;
+    border-radius: 2px;
+}
+
+#repository_table table {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+}
+  
+#repository_table td, th {
+    border: 1px solid #80af90;
+    text-align: left;
+    padding: 8px;
+}
+  
+#repository_table tr:nth-child(even) {
+    background-color: #acdbbb;
+}

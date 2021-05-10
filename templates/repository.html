@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for('static',filename='repository_styles.css')}}>
+    <title>Repository | Herbal Healing</title>
+</head>
+<body>
+    <div id="bar"> <!-- navigation bar -->
+        <div id="heading">
+            <div id="title"> <!-- title of the website -->
+                <h1>HERBAL HEALING</h1>
+            </div>
+            <div id="subtitle"> <!-- subtitle of the website -->
+                <h1>THE MODERN HERBAL REPOSITORY</h1>
+            </div>
+            <div class="menu"> <!-- menu bar -->
+                <a href="{{url_for('home')}}"> <!-- home button -->
+                    <button id="button_home" type="button" href="home">HOME</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="page">
+        <h1 id="page_name">REPOSITORY</h1> <!-- page name-->
+        <div id="sort">
+            <div id="filter-dropdown">
+                <button id="filter">SORT BY</button>
+                <div id="filter-content">
+                    <a id="option" href="">NAME</a>
+                        <div id="option-content">
+                            <a href="">A-Z</a>
+                            <a href="">Z-A</a>
+                        </div>
+                    <a href="">TYPE</a>
+                    <a href="">RARITY</a>
+                </div>
+            </div>
+            <div id="searchbar">
+                <form id="user_input" action="/search" method="put">
+                    <input type="text" id="search" placeholder="SEARCH" name="filter">
+                </form>
+            </div>
+        </div>
+        <div id="repository_table"> <!-- database table display -->
+            <table>    
+                <tr>
+                    <th>NAME</th>
+                    <th>TYPE</th>
+                    <th>RARITY</th>
+                    <th>PLACE OF ORIGIN</th>
+                    <th>DESCRIPTION</th>
+                </tr>
+                {% for item in results %}
+                <tr>
+                    <td>{{item[0]}}</td>
+                    <td>{{item[1]}}</td>
+                    <td>{{item[2]}}</td>
+                    <td>{{item[3]}}</td>
+                    <td>{{item[4]}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for('static',filename='home_styles.css')}}>
+    <title>Home | Herbal Healing</title>
+</head> 
+<body>
+    <div id="bar"> <!-- navigation bar -->
+        <div id="heading">
+            <div id="title"> <!-- title of the website -->
+                <h1>HERBAL HEALING</h1>
+            </div>
+            <div id="subtitle"> <!-- subtitle of the website -->
+                <h1>THE MODERN HERBAL REPOSITORY</h1>
+            </div>
+            <div class="menu"> <!-- menu bar -->
+                <a href="{{url_for('repository')}}"> <!-- repository button -->
+                    <button id="button_repository" type="button" href="repository">REPOSITORY</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
