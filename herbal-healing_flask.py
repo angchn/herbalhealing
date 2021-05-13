@@ -23,12 +23,17 @@ def home():
     #home page, where user is presented with links to other pages.
     return render_template("home.html")
 
-@app.route ("/repository")
+@app.route ("/repository", methods=["GET", "POST"])
 def repository():
     #repository page, where all data are displayed in a table.
+    print (request.args.get('type'))
     cursor = get_db().cursor()
     #sql statement, displaying data from foreign key onto primary key.
     sql = "SELECT herb.name, rarity.level, type.classification, herb.place_of_origin, herb.description FROM herb JOIN rarity ON herb.rarity = rarity.id JOIN type ON herb.type = type.id"
+    if request.args.get('type') == 'a-z':
+        sql += " ORDER BY herb.name"
+    elif request.args.get('type') == 'z-a':
+        sql += " ORDER BY herb.name DESC"
     cursor.execute(sql)
     results = cursor.fetchall()
     return render_template("repository.html", results=results)
