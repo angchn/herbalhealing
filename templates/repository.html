@@ -24,20 +24,32 @@
     </div>
     <div id="page">
         <h1 id="page_name">REPOSITORY</h1> <!-- page name-->
-        <div id="sort">
+        <div id="sort"> <!-- sorting bar -->
             <div id="filter-dropdown">
-                <button id="filter">SORT BY</button>
+                <button id="filter">SORT BY</button> <!-- sort button -->
                 <div id="filter-content">
-                    <a id="option" href="">NAME</a>
+                    <a id="option" href="{{url_for('repository')}}">NAME</a> <!-- sort by name -->
                         <div id="option-content">
-                            <a href="">A-Z</a>
-                            <a href="">Z-A</a>
+                            <a href="{{url_for('repository', name='a-z')}}">A-Z</a>
+                            <a href="{{url_for('repository', name='z-a')}}">Z-A</a>
                         </div>
-                    <a href="">TYPE</a>
-                    <a href="">RARITY</a>
+                    <a id="option" href="{{url_for('repository')}}">RARITY</a> <!-- sort by rarity -->
+                        <div id="option-content">
+                            <a href="{{url_for('repository', rarity='common')}}">COMMON</a>
+                            <a href="{{url_for('repository', rarity='rare')}}">RARE</a>
+                            <a href="{{url_for('repository', rarity='unique')}}">UNIQUE</a>
+                        </div>
+                    <a id="option" href="{{url_for('repository')}}">TYPE</a> <!-- sort by type -->
+                        <div id="option-content">
+                            <a href="{{url_for('repository', type='flower')}}">FLOWER</a>
+                            <a href="{{url_for('repository', type='fruit')}}">FRUIT</a>
+                            <a href="{{url_for('repository', type='leaf')}}">LEAF</a>
+                            <a href="{{url_for('repository', type='root')}}">ROOT</a>
+                            <a href="{{url_for('repository', type='seed')}}">SEED</a>
+                        </div>
                 </div>
             </div>
-            <div id="searchbar">
+            <div id="searchbar"> <!-- search button -->
                 <form id="user_input" action="/search" method="put">
                     <input type="text" id="search" placeholder="SEARCH" name="filter">
                 </form>
@@ -47,8 +59,8 @@
             <table>    
                 <tr>
                     <th>NAME</th>
-                    <th>TYPE</th>
                     <th>RARITY</th>
+                    <th>TYPE</th>
                     <th>PLACE OF ORIGIN</th>
                     <th>DESCRIPTION</th>
                 </tr>
