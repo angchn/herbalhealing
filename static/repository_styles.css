@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
 }
 
 #bar {
@@ -14,7 +15,6 @@ body {
 
 #title {
     float: none;
-    font-family: 'Segoe UI', Verdana, sans-serif;
     padding: 10px;
     display: inline-block;
     font-size: 12px;
@@ -23,7 +23,6 @@ body {
 
 #subtitle {
     float: none;
-    font-family: 'Segoe UI', Verdana, sans-serif;
     margin-left: auto;
     display: inline-block;
     font-size: 8px;
@@ -37,7 +36,6 @@ body {
 }
 
 #button_home {
-    font-family: 'Segoe UI', Verdana, sans-serif;
     font-size: 15px;
     border: none;
     padding: 2px;
@@ -62,18 +60,18 @@ body {
 }
 
 #page_name {
-    font-family: 'Segoe UI', Verdana, sans-serif;
     padding: 10px;
     letter-spacing: 3px;
 }
 
 #sort {
-    width: 89%;
+    width: 90%;
     margin: auto;
     padding-bottom: 10px;
 }
 
 #filter {
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
     color: black;
     padding: 12px;
     font-size: 14px;
@@ -88,7 +86,6 @@ body {
 }
 
 #filter-content {
-    font-family: 'Segoe UI', Verdana, sans-serif;
     font-size: 12px;
     display: none;
     position: absolute;
@@ -114,14 +111,12 @@ body {
 #filter-dropdown:hover #filter {background-color: lightgrey;}
 
 #option-content {
-    font-family: 'Segoe UI', Verdana, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     display: none;
     position: relative;
-    left: 160px;
-    bottom: 40px;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 80px;
+    margin-left: 30px;  
 }
 
 #option-content a {
@@ -141,8 +136,8 @@ body {
 }
 
 #search {
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
     padding: 12px;
-    font-family: 'Segoe UI', Verdana, sans-serif;
     font-size: 14px;
     padding-bottom: 10px;
     border-color: lightgrey;
@@ -151,9 +146,9 @@ body {
 }
 
 #repository_table table {
-    font-family: 'Segoe UI', Verdana, sans-serif;
     border-collapse: collapse;
     margin: auto;
+    width: 90%;
 }
   
 #repository_table td, th {
