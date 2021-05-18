@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    min-height: 100vh;
+    padding: 0;
 }
 
 #bar {
@@ -8,7 +10,7 @@ body {
     height: 90px;
 }
 
-#heading {
+#header {
     width: 80%;
     margin: auto;
 }
@@ -68,7 +70,7 @@ body {
 #sort {
     width: 90%;
     margin: auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 #filter {
@@ -150,6 +152,7 @@ body {
     border-collapse: collapse;
     margin: auto;
     width: 90%;
+    margin-bottom: 50px;
 }
   
 #repository_table td, th {

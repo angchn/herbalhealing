@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
 }
 
 #bar {
@@ -14,9 +15,7 @@ body {
 
 #title {
     float: none;
-    font-family: 'Segoe UI', Verdana, sans-serif;
     padding: 10px;
-    margin-left: 200px;
     display: inline-block;
     font-size: 12px;
     letter-spacing: 3px;
@@ -24,7 +23,6 @@ body {
 
 #subtitle {
     float: none;
-    font-family: 'Segoe UI', Verdana, sans-serif;
     margin-left: auto;
     display: inline-block;
     font-size: 8px;
@@ -38,22 +36,31 @@ body {
 }
 
 #button_repository {
-    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
     font-size: 15px;
     border: none;
     padding: 2px;
     background: none;
-    width: 95px;
+    width: 100px;
     float: right;
     transition-duration: 0.2s;
     cursor: pointer;
-    margin-right: 200px;
 }
 
-#button_repository:hover{
+#button_repository:hover {
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-width: 3.1px;
     width: fit-content;
+}
+
+#page {
+    width: 80%;
+    margin: auto;
+    background-color: #f7f6f2;
+}
+
+#banner_image{
+    width: 100%;
 }
