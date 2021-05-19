@@ -29,25 +29,25 @@ def repository():
     cursor = get_db().cursor()
     #sql statement, displaying data from foreign key onto primary key.
     sql = "SELECT herb.name, rarity.level, type.classification, herb.place_of_origin, herb.description FROM herb JOIN rarity ON herb.rarity = rarity.id JOIN type ON herb.type = type.id"
-    if request.args.get ('name')  == 'a-z': #sort by name (a-z)
+    if request.args.get ('name')  == 'a-z': #sort by name (a-z).
         sql += " ORDER BY herb.name"
-    elif request.args.get ('name') == 'z-a': #sort by name (z-a)
+    elif request.args.get ('name') == 'z-a': #sort by name (z-a).
         sql += " ORDER BY herb.name DESC"
-    elif request.args.get ('rarity') == 'common': #sort by rarity (common)
+    elif request.args.get ('rarity') == 'common': #sort by rarity (common).
         sql += " WHERE rarity.level='common'"
-    elif request.args.get ('rarity') == 'rare':#sort by rarity (rare)
+    elif request.args.get ('rarity') == 'rare':#sort by rarity (rare).
         sql += " WHERE rarity.level='rare'"
-    elif request.args.get ('rarity') == 'unique': #sort by rarity (unique)
+    elif request.args.get ('rarity') == 'unique': #sort by rarity (unique).
         sql += " WHERE rarity.level='unique'"
-    elif request.args.get ('type') == 'flower': #sort by type (flower)
+    elif request.args.get ('type') == 'flower': #sort by type (flower).
         sql += " WHERE type.classification='flower'" 
-    elif request.args.get ('type') == 'fruit':  #sort by type (fruit)
+    elif request.args.get ('type') == 'fruit':  #sort by type (fruit).
         sql += " WHERE type.classification='fruit'"
-    elif request.args.get ('type') == 'leaf': #sort by type (leaf)
+    elif request.args.get ('type') == 'leaf': #sort by type (leaf).
         sql += " WHERE type.classification='leaf'"
-    elif request.args.get ('type') == 'root': #sort by type (root)
+    elif request.args.get ('type') == 'root': #sort by type (root).
         sql += " WHERE type.classification='root'"
-    elif request.args.get ('type') == 'seed': #sort by type (seed)
+    elif request.args.get ('type') == 'seed': #sort by type (seed).
         sql += " WHERE type.classification='seed'"
     cursor.execute(sql)
     results = cursor.fetchall()

@@ -1,10 +1,11 @@
 body {
     margin: 0;
     font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    background-color: #eff4d4;
 }
 
 #bar {
-    background-color: #acdbbb;
+    background-color: #eff4d4;
     height: 90px;
 }
 
@@ -19,6 +20,7 @@ body {
     display: inline-block;
     font-size: 12px;
     letter-spacing: 3px;
+    color: #457e78;
 }
 
 #subtitle {
@@ -27,6 +29,7 @@ body {
     display: inline-block;
     font-size: 8px;
     letter-spacing: 2px;
+    color: #457e78;
 }
 
 .menu {
@@ -45,6 +48,7 @@ body {
     float: right;
     transition-duration: 0.2s;
     cursor: pointer;
+    color: #457e78;
 }
 
 #button_repository:hover {
@@ -58,9 +62,8 @@ body {
 #page {
     width: 80%;
     margin: auto;
-    background-color: #f7f6f2;
 }
 
-#banner_image{
+#banner_image {
     width: 100%;
 }
