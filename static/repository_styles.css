@@ -3,10 +3,11 @@ body {
     font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
     min-height: 100vh;
     padding: 0;
+    background-color: white;
 }
 
 #bar {
-    background-color: #acdbbb;
+    background-color: #eff4d4;
     height: 90px;
 }
 
@@ -21,14 +22,7 @@ body {
     display: inline-block;
     font-size: 12px;
     letter-spacing: 3px;
-}
-
-#subtitle {
-    float: none;
-    margin-left: auto;
-    display: inline-block;
-    font-size: 8px;
-    letter-spacing: 2px;
+    color: #457e78;
 }
 
 .menu {
@@ -39,7 +33,7 @@ body {
 
 #button_home {
     font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     padding: 2px;
     background: none;
@@ -47,6 +41,7 @@ body {
     float: right;
     transition-duration: 0.2s;
     cursor: pointer;
+    color: #457e78;
 }
 
 #button_home:hover{
@@ -65,6 +60,7 @@ body {
 #page_name {
     padding: 10px;
     letter-spacing: 3px;
+    color: #457e78;
 }
 
 #sort {
@@ -75,7 +71,7 @@ body {
 
 #filter {
     font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
-    color: black;
+    color: #457e78;
     padding: 12px;
     font-size: 14px;
     border: 2px solid lightgray;
@@ -99,7 +95,7 @@ body {
 }
 
 #filter-content a {
-    color: black;
+    color: #457e78;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -123,7 +119,7 @@ body {
 }
 
 #option-content a {
-    color: black;
+    color: #457e78;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
