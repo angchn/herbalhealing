@@ -74,3 +74,47 @@ body {
     margin-top: 200px; 
     color: #506423;
 }
+
+.description {
+    font-size: 20px;
+}
+
+.subtitle_button {
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    background-color: #7d9758;
+    border-radius: 30px;
+    border: 2px solid #7d9758;
+    padding: 20px;
+    float: left;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.subtitle_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.subtitle_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.subtitle_button:hover span {
+    padding-right: 25px;
+}
+  
+.subtitle_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
