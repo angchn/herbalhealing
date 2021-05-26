@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
     background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #bar {
@@ -35,9 +37,9 @@ body {
     border: none;
     padding: 2px;
     background: none;
-    width: 100px;
+    width: 10%px;
     float: right;
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
     cursor: pointer;
     color: white;
 }
@@ -73,6 +75,7 @@ body {
     position: absolute;
     margin-top: 200px; 
     color: #506423;
+    width: 50%;
 }
 
 .description {
@@ -105,7 +108,7 @@ body {
     content: '\00bb';
     position: absolute;
     opacity: 0;
-    top: 0;
+    top: -2.5px;
     right: -20px;
     transition: 0.5s;
 }
