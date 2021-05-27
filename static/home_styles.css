@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     background-color: white;
     max-width: 100%;
     overflow-x: hidden;
@@ -25,6 +25,19 @@ body {
     color: white;
 }
 
+#title a{
+    float: none;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 0px;
+    display: inline-block;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: white;
+    text-decoration: none;
+}
+
 .menu {
     float: right;
     padding: 10px;
@@ -32,19 +45,35 @@ body {
 }
 
 #button_repository {
-    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     border: none;
     padding: 2px;
     background: none;
     width: 10%px;
     float: right;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
-#button_repository:hover {
+#button_about {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    border: none;
+    padding: 2px;
+    background: none;
+    width: 10%px;
+    float: right;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+#button_repository:hover, #button_about:hover {
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom-style: solid;
@@ -76,16 +105,23 @@ body {
     margin-top: 200px; 
     color: #506423;
     width: 50%;
+    font-weight: lighter;
+}
+
+#tag {
+    margin-bottom: -50px;
 }
 
 .description {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .subtitle_button {
-    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 18px;
     font-weight: bold;
+    margin-top: 20px;
     width: 200px;
     background-color: #7d9758;
     border-radius: 30px;

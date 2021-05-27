@@ -10,22 +10,22 @@
     <div id="bar"> <!-- navigation bar -->
         <div id="header">
             <div id="title"> <!-- title of the website -->
-                <h1>HERBAL HEALING</h1>
+                <a href="{{url_for('home')}}">HERBAL HEALING</a>
             </div>
             <div class="menu"> <!-- menu bar -->
-                <a href="{{url_for('repository')}}"> <!-- repository button -->
-                    <button id="button_repository" type="button" href="repository">REPOSITORY</button>
-                </a>
+                <a id="button_about" href="{{url_for('about')}}">ABOUT</a> <!-- about button -->
+                <a id="button_repository" href="{{url_for('repository')}}">REPOSITORY</a> <!-- repository button -->
             </div>
         </div>
     </div>
-    <div id="banner_image">
+    <div id="banner_image"> <!-- background image -->
         <img src="/static/image/leaves.jpg" alt="Heartleaf Philodendron">
     </div>
     <div id=subtitle>
-        <h1>a modern herbal repository</h1>
-        <p class="description">Medicinal plants have been a resource for healing in local communities around the world for thousands of years.</p>
-        <p class="description">"Herbal Healing" is dedicated to promote the knowledge </p>
+        <h1 id="tag">a modern </h1>
+        <h1>herbal repository</h1>
+        <p class="description">Medicinal plants have been a resource for healing in local communities around the world for thousands of years. 
+            "Herbal Healing" is dedicated to promote the knowledge, use and delight of herbs in everyday life.</p>
         <a href="{{url_for('repository')}}"> <!-- repository button -->
             <button class="subtitle_button" type="button" href="repository"><span>REPOSITORY</span></button>
         </a>

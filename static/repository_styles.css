@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
-    min-height: 100vh;
-    padding: 0;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #bar {
@@ -25,26 +25,55 @@ body {
     color: white;
 }
 
+#title a{
+    float: none;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 0px;
+    display: inline-block;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: white;
+    text-decoration: none;
+}
+
 .menu {
     float: right;
     padding: 10px;
     margin-top: 24px;
 }
 
-#button_home {
-    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+#button_repository {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     border: none;
     padding: 2px;
     background: none;
-    width: 50px;
+    width: 10%px;
     float: right;
     transition-duration: 0.2s;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
-#button_home:hover{
+#button_about {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    border: none;
+    padding: 2px;
+    background: none;
+    width: 10%px;
+    float: right;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+#button_repository:hover, #button_about:hover {
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom-style: solid;
@@ -70,7 +99,7 @@ body {
 }
 
 #filter {
-    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     color: #506423;
     padding: 12px;
     font-size: 14px;
@@ -135,7 +164,7 @@ body {
 }
 
 #search {
-    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     padding: 12px;
     font-size: 14px;
     padding-bottom: 10px;
