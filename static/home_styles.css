@@ -102,7 +102,7 @@ body {
     font-size: 40px;
     vertical-align: middle;
     position: absolute;
-    margin-top: 200px; 
+    margin-top: 150px; 
     color: #506423;
     width: 50%;
     font-weight: lighter;
@@ -142,9 +142,10 @@ body {
   
 .subtitle_button span:after {
     content: '\00bb';
+    font-size: 15px;
     position: absolute;
     opacity: 0;
-    top: -2.5px;
+    bottom: 3px;
     right: -20px;
     transition: 0.5s;
 }
