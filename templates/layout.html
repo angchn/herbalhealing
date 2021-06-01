@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={{url_for('static',filename='repository_styles.css')}}>
+    <link rel="stylesheet" href={{url_for('static',filename='styles.css')}}>
     <title>Home | Herbal Healing</title>
 </head> 
 <body>
     <div id="bar"> <!-- navigation bar -->
-        <div id="heading">
+        <div id="header">
             <div id="title"> <!-- title of the website -->
-                <h1>HERBAL HEALING</h1>
+                <a href="{{url_for('home')}}">HERBAL HEALING</a>
             </div>
             <div class="menu"> <!-- menu bar -->
-                <a href="{{url_for('repository')}}"> <!-- repository button -->
-                    <button id="button_repository" type="button" href="repository">REPOSITORY</button>
-                </a>
+                <a id="button_about" href="{{url_for('about')}}">ABOUT</a> <!-- about button -->
+                <a id="button_repository" href="{{url_for('repository')}}">REPOSITORY</a> <!-- repository button -->
             </div>
         </div>
     </div>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>

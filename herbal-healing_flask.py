@@ -53,10 +53,25 @@ def repository():
     results = cursor.fetchall()
     return render_template("repository.html", results=results)
 
+@app.route ("/search", methods=["POST", "GET"])
+def search():
+    if request.method == "POST":
+        print (request.form.get("filter"))
+        cursor = get_db().cursor()
+        sql = "SELECT * FROM herb WHERE name LIKE ?"
+        cursor.execute (sql, (request.form.get("filter"),))
+        results = cursor.fetchone()
+        print (results)
+        return redirect (f"/herb/{results[0]}")
+
 @app.route ("/about")
 def about():
     #about page, provides user with more information about the website.
     return render_template("about.html")
+
+@app.route ("/herb/<int:id>")
+def herb(id):
+    return render_template("herb.html", herb=id)
 
 if __name__ == "__main__":
     app.run(debug=True)

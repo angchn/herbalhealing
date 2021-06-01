@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#bar {
+    background-color: #7d9758;
+    height: 90px;
+}
+
+#header {
+    width: 80%;
+    margin: auto;
+}
+
+#title {
+    float: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+#title a{
+    float: none;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 0px;
+    display: inline-block;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+    padding: 10px;
+    margin-top: 24px;
+}
+
+#button_repository {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    border: none;
+    padding: 2px;
+    background: none;
+    width: 10%px;
+    float: right;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+#button_about {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    border: none;
+    padding: 2px;
+    background: none;
+    width: 10%px;
+    float: right;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+#button_repository:hover, #button_about:hover {
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+}
