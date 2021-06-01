@@ -55,6 +55,7 @@ def repository():
 
 @app.route ("/search", methods=["POST", "GET"])
 def search():
+    #search bar, allows user to search for a specific herb and redirects them to the specific page for that herb.
     if request.method == "POST":
         print (request.form.get("filter"))
         cursor = get_db().cursor()
