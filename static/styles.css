@@ -81,14 +81,24 @@ body {
     width: fit-content;
 }
 
+#banner {
+    width: 80%;
+    margin: auto;
+}
+
 #number {
     font-size: 300px;
     padding: 0px;
     color: #405a29;
     margin-top: 0px;
+    position: absolute;
+    display: inline-block;
 }
 
-#banner {
-    width: 80%;
-    margin: auto;
+#herb_name {
+    position: absolute;
+    font-size: 100px;
+    color: black;
+    margin-left: 10%;
+    margin-top: 150px;
 }

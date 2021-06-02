@@ -72,7 +72,11 @@ def about():
 
 @app.route ("/herb/<int:id>")
 def herb(id):
-    return render_template("herb.html", herb=id)
+    cursor = get_db().cursor()
+    sql = "SELECT herb.name, rarity.level, type.classification, herb.place_of_origin, herb.description FROM herb JOIN rarity ON herb.rarity = rarity.id JOIN type ON herb.type = type.id"
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return render_template("herb.html", results=results)
 
 if __name__ == "__main__":
     app.run(debug=True)
