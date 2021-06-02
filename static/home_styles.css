@@ -4,8 +4,7 @@ body {
     background-color: white;
     max-width: 100%;
     overflow-x: hidden;
-    min-height: 100vh;
-    height: 1000px;
+    height: 100%
 }
 
 #bar {
@@ -91,6 +90,7 @@ body {
     margin-top: 0;
     position: static;
     display: inline-block;
+    height: 88vh;
 }
 
 #banner_image {
@@ -98,6 +98,10 @@ body {
     float: right;
     position: relative;
     margin-top: 0;
+}
+
+@media screen and (max-width: 800px) {
+    #banner_image {display:none;}
 }
 
 #subtitle {
@@ -166,5 +170,6 @@ body {
 #page {
     margin-right: auto;
     margin-left: auto;
+    height: 200px;
     background-color: #c7c69c;
 }
