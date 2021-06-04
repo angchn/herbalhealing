@@ -83,22 +83,32 @@ body {
 
 #banner {
     width: 80%;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
 }
 
 #number {
-    font-size: 300px;
+    font-size: 200px;
     padding: 0px;
     color: #405a29;
     margin-top: 0px;
-    position: absolute;
     display: inline-block;
 }
 
+#herb{
+    display:inline-block;
+    padding: 20px;
+}
+
 #herb_name {
-    position: absolute;
-    font-size: 100px;
-    color: black;
-    margin-left: 10%;
-    margin-top: 150px;
+    font-size: 80px;
+    color: #7d9758;
+    margin-bottom: -10px;
+}
+
+#categories {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 18px;
+    display: inline-block;
 }

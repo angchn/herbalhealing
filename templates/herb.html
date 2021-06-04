@@ -1,9 +1,12 @@
 {% extends "layout.html" %}
     {% block content %}
-    
-    <div id="banner">
-        <h1 id="number">{{herb}}</h1>
-        <h2 id="herb_name">{{item[0]}}</h2>
+
+    <div id="banner"> <!-- displays herb id, herb name, herb rarity and herb type -->
+        <h1 id="number">{{result[0]}}</h1>
+        <div id="herb">
+            <h2 id="herb_name">{{result[1]}}</h2>
+            <pre id="categories">{{result[2]}} | {{result[3]}}</pre>
+        </div>
     </div>
 
     {% endblock %}

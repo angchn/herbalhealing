@@ -65,18 +65,19 @@ def search():
         print (results)
         return redirect (f"/herb/{results[0]}")
 
+@app.route ("/herb/<int:id>")
+def herb(id):
+    #page that displays all the information about the specific herb the user has searched for.
+    cursor = get_db().cursor()
+    sql = "SELECT herb.id, herb.name, rarity.level, type.classification, herb.place_of_origin, herb.description FROM herb JOIN rarity ON herb.rarity = rarity.id JOIN type ON herb.type = type.id WHERE herb.id = ?"
+    cursor.execute(sql, (id,))
+    result = cursor.fetchone()
+    return render_template("herb.html", result=result)
+
 @app.route ("/about")
 def about():
     #about page, provides user with more information about the website.
     return render_template("about.html")
-
-@app.route ("/herb/<int:id>")
-def herb(id):
-    cursor = get_db().cursor()
-    sql = "SELECT herb.name, rarity.level, type.classification, herb.place_of_origin, herb.description FROM herb JOIN rarity ON herb.rarity = rarity.id JOIN type ON herb.type = type.id"
-    cursor.execute(sql)
-    results = cursor.fetchall()
-    return render_template("herb.html", results=results)
 
 if __name__ == "__main__":
     app.run(debug=True)
