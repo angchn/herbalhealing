@@ -62,8 +62,11 @@ def search():
         sql = "SELECT * FROM herb WHERE name LIKE ?"
         cursor.execute (sql, (request.form.get("filter"),))
         results = cursor.fetchone()
-        print (results)
-        return redirect (f"/herb/{results[0]}")
+        if results == None:
+            return redirect ("/error")
+        else: 
+            print (f"results={results}")
+            return redirect (f"/herb/{results[0]}")
 
 @app.route ("/herb/<int:id>")
 def herb(id):
@@ -74,10 +77,23 @@ def herb(id):
     result = cursor.fetchone()
     return render_template("herb.html", result=result)
 
+@app.route ("/gallery")
+def gallery():
+    return render_template("gallery.html")
+
 @app.route ("/about")
 def about():
     #about page, provides user with more information about the website.
     return render_template("about.html")
+
+@app.route ("/contact")
+def contact():
+    return render_template("contact.html")
+
+@app.route ("/error")
+def error():
+    #error page, for when user input returns no results.
+    return render_template("error.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
