@@ -43,7 +43,6 @@ body {
     padding: 10px;
     margin-top: 24px;
     width: 40%;
-    margin-left: 35%;
 }
 
 #button_repository {
@@ -53,8 +52,8 @@ body {
     padding: 2px;
     background: none;
     width: 40px;
-    margin-right: 30px;
-    margin-left: 0px;
+    margin-right: 00px;
+    margin-left: 120px;
     transition-duration: 0.2s;
     cursor: pointer;
     color: white;
@@ -62,7 +61,7 @@ body {
     position: relative;
 }
 
-#button_about {
+#button_about, #button_contact, #button_gallery {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     border: none;
@@ -74,10 +73,11 @@ body {
     color: white;
     text-decoration: none;
     margin-right: 0px;
+    margin-left: 30px;
     position: relative;
 }
 
-#button_repository:hover, #button_about:hover {
+#button_repository:hover, #button_about:hover, #button_contact:hover, #button_gallery:hover {
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom-style: solid;
@@ -115,4 +115,19 @@ body {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 18px;
     display: inline-block;
+}
+
+#main_image {
+    width: 35%;
+    float: right;
+    position: relative;
+    margin-top: -150px;
+}
+
+#page {
+    margin-right: auto;
+    margin-left: auto;
+    height: 200px;
+    background-color: #c7c69c;
+    position: relative;
 }

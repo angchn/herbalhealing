@@ -14,7 +14,9 @@
             </div>
             <div class="menu"> <!-- menu bar -->
                 <a id="button_repository" href="{{url_for('repository')}}">REPOSITORY</a> <!-- repository button -->
+                <a id="button_gallery" href="{{url_for('gallery')}}">GALLERY</a> <!-- gallery button-->
                 <a id="button_about" href="{{url_for('about')}}">ABOUT</a> <!-- about button -->
+                <a id="button_contact" href="{[url_for('contact')}}">CONTACT</a> <!-- contact button-->
             </div>
         </div>
     </div>
@@ -61,7 +63,7 @@
                     <th>DESCRIPTION</th>
                 </tr>
                 {% for item in results %}
-                <tr>
+                <tr class="herb_hover">
                     <td>{{item[0]}}</td>
                     <td>{{item[1]}}</td>
                     <td>{{item[2]}}</td>

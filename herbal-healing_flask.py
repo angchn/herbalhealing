@@ -72,7 +72,7 @@ def search():
 def herb(id):
     #page that displays all the information about the specific herb the user has searched for.
     cursor = get_db().cursor()
-    sql = "SELECT herb.id, herb.name, rarity.level, type.classification, herb.place_of_origin, herb.description FROM herb JOIN rarity ON herb.rarity = rarity.id JOIN type ON herb.type = type.id WHERE herb.id = ?"
+    sql = "SELECT herb.id, herb.name, rarity.level, type.classification, herb.place_of_origin, herb.description, herb.image FROM herb JOIN rarity ON herb.rarity = rarity.id JOIN type ON herb.type = type.id WHERE herb.id = ?"
     cursor.execute(sql, (id,))
     result = cursor.fetchone()
     return render_template("herb.html", result=result)
