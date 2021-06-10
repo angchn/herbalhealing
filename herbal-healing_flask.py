@@ -63,6 +63,7 @@ def search():
         cursor.execute (sql, (request.form.get("filter"),))
         results = cursor.fetchone()
         if results == None:
+            
             return redirect ("/error")
         else: 
             print (f"results={results}")

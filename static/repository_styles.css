@@ -187,11 +187,34 @@ body {
 }
   
 #repository_table td, th {
-    border: 1px solid #405a29;
+    border: 1px solid #506423;
     text-align: left;
     padding: 8px;
 }
-  
-#repository_table tr:nth-child(even) {
+
+
+#herb_row:nth-child(odd) {
     background-color: #bcd4a4;
+}
+
+#categories_row {
+    background-color: #7d9758;
+    color: white;
+}
+
+#herb_row:nth-child(odd):hover, #herb_row:nth-child(odd):focus-within {
+    background: #96aa83;
+    outline: none;
+}
+
+#herb_row:nth-child(even):hover, #herb_row:nth-child(even):focus-within {
+    background: #d0e1bf;
+    outline: none;
+}
+
+td > a:first-child {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  z-index: 0;
 }
