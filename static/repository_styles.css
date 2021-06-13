@@ -43,6 +43,7 @@ body {
     padding: 10px;
     margin-top: 24px;
     width: 50%;
+    text-align: right;
 }
 
 #button_repository {
@@ -184,17 +185,14 @@ body {
     margin: auto;
     width: 90%;
     margin-bottom: 50px;
+    background: #f1f1f1;
 }
   
 #repository_table td, th {
     border: 1px solid #506423;
     text-align: left;
     padding: 8px;
-}
-
-
-#herb_row:nth-child(odd) {
-    background-color: #bcd4a4;
+    cursor: pointer;
 }
 
 #categories_row {
@@ -202,12 +200,7 @@ body {
     color: white;
 }
 
-#herb_row:nth-child(odd):hover, #herb_row:nth-child(odd):focus-within {
-    background: #96aa83;
-    outline: none;
-}
-
-#herb_row:nth-child(even):hover, #herb_row:nth-child(even):focus-within {
+#herb_row:hover, #herb_row:focus-within {
     background: #d0e1bf;
     outline: none;
 }

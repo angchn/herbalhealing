@@ -64,15 +64,11 @@
                 </tr>
                 {% for item in results %}
                 <tr id="herb_row">
-                    <td>
-                        <form action="/forward" method="post">
-                            {{item[0]}}
-                        </form>
-                    </td>
-                    <td><a href="{{url_for('home')}}" tabindex="-1">{{item[1]}}</a></td>
-                    <td><a href="{{url_for('home')}}" tabindex="-1">{{item[2]}}</a></td>
-                    <td><a href="{{url_for('home')}}" tabindex="-1">{{item[3]}}</a></td>
-                    <td><a href="{{url_for('home')}}" tabindex="-1">{{item[4]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[1]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[2]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[3]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[4]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[5]}}</a></td>
                 </tr>
                 {% endfor %}
             </table>

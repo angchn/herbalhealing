@@ -29,7 +29,7 @@ body {
     color: white;
 }
 
-#title a{
+#title a {
     float: none;
     font-weight: bold;
     padding: 10px;
@@ -42,11 +42,17 @@ body {
     text-decoration: none;
 }
 
+.fas fa-seedling {
+    
+}
+
 .menu {
     float: right;
     padding: 10px;
     margin-top: 24px;
     width: 50%;
+    margin-right: 0;
+    text-align: right;
 }
 
 #button_repository {
@@ -56,8 +62,7 @@ body {
     padding: 2px;
     background: none;
     width: 40px;
-    margin-right: 00px;
-    margin-left: 120px;
+    margin-right: 0px;
     transition-duration: 0.2s;
     cursor: pointer;
     color: white;
@@ -78,7 +83,6 @@ body {
     text-decoration: none;
     margin-right: 0px;
     margin-left: 30px;
-    position: relative;
 }
 
 #button_repository:hover, #button_about:hover, #button_contact:hover, #button_gallery:hover {
