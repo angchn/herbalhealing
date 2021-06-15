@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href={{url_for('static',filename='styles.css')}}>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <title>Home | Herbal Healing</title>
 </head> 
 <body>
     <div id="bar"> <!-- navigation bar -->
         <div id="header">
             <div id="title"> <!-- title of the website -->
-                <a href="{{url_for('home')}}">HERBAL HEALING</h1>
+                <a href="{{url_for('home')}}">
+                    <i class="fas fa-seedling" style="font-family: Font Awesome 5 Free; font-size: 30px; color: white;"></i>
+                    HERBAL HEALING
+                </a>
             </div>
             <div class="menu"> <!-- menu bar -->
                 <a id="button_repository" href="{{url_for('repository')}}">REPOSITORY</a> <!-- repository button -->
