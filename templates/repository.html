@@ -64,15 +64,17 @@
                     <th>RARITY</th>
                     <th>TYPE</th>
                     <th style="width:150px;">PLACE OF ORIGIN</th>
-                    <th>DESCRIPTION</th>
+                    <th style="width:50%;">DESCRIPTION</th>
+                    <th>MAIN USE</th>
                 </tr>
                 {% for item in results %}
                 <tr id="herb_row">
-                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[1]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1" style="font-weight: bold;">{{item[1]}}</a></td>
                     <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[2]}}</a></td>
                     <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[3]}}</a></td>
                     <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[4]}}</a></td>
                     <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[5]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[6]}}</a></td>
                 </tr>
                 {% endfor %}
             </table>
