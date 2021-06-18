@@ -9,9 +9,6 @@ body {
 #bar {
     background-color: #7d9758;
     height: 90px;
-    position: sticky;
-    top: 0;
-    z-index: 99;
 }
 
 #header {
@@ -89,49 +86,6 @@ body {
     width: fit-content;
 }
 
-#banner {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10%;
-}
-
-#number {
-    font-size: 200px;
-    padding: 0px;
-    color: #405a29;
-    margin-top: 0px;
-    display: inline-block;
-}
-
-#herb{
-    display:inline-block;
-    padding: 20px;
-}
-
-#herb_name {
-    font-size: 80px;
-    color: #7d9758;
-    margin-bottom: -10px;
-}
-
-#categories {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-size: 18px;
-    display: inline-block;
-}
-
-#main_image {
-    width: 35%;
-    float: right;
-    position: relative;
-    margin-top: -190px;
-}
-
-#page {
-    margin-right: auto;
-    margin-left: auto;
-    height: 2000px;
-    background-color: #c7c69c;
-    position: relative;
+h1{
+    color: red;
 }

@@ -63,7 +63,6 @@ def search():
         cursor.execute (sql, (request.form.get("filter"),))
         results = cursor.fetchone()
         if results == None:
-            
             return redirect ("/error")
         else: 
             print (f"results={results}")
@@ -89,6 +88,7 @@ def about():
 
 @app.route ("/contact")
 def contact():
+    #contact page, displays email and other information.
     return render_template("contact.html")
 
 @app.route ("/error")

@@ -20,7 +20,7 @@
                 <a id="button_repository" href="{{url_for('repository')}}">REPOSITORY</a> <!-- repository button -->
                 <a id="button_gallery" href="{{url_for('gallery')}}">GALLERY</a> <!-- gallery button-->
                 <a id="button_about" href="{{url_for('about')}}">ABOUT</a> <!-- about button -->
-                <a id="button_contact" href="{[url_for('contact')}}">CONTACT</a> <!-- contact button-->
+                <a id="button_contact" href="{{url_for('contact')}}">CONTACT</a> <!-- contact button-->
             </div>
         </div>
     </div>
@@ -39,7 +39,11 @@
         </div>
     </div>
     <div id="page">
-        <h1>LSHGIEE</h1>
+        <div id="searchbar"> <!-- search bar -->
+            <form id="user_input" action="/search" method="post">
+                <input type="text" id="search" placeholder="search for a herb . . ." name="filter">
+            </form>
+        </div>
     </div>
 </body>
 </html>

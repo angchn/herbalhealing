@@ -143,6 +143,7 @@ body {
     transition-duration: 0.3s;
     cursor: pointer;
     color: white;
+    outline: none;
 }
 
 .subtitle_button span {
@@ -174,6 +175,23 @@ body {
 #page {
     margin-right: auto;
     margin-left: auto;
-    height: 200px;
+    height: 1000px;
     background-color: #c7c69c;
+}
+
+#searchbar {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#search {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    padding: 30px;
+    font-size: 20px;
+    border-color: lightgrey;
+    border-style: solid;
+    border-radius: 2px;
+    width: 50%;
+    border-radius: 15px;
+    outline: none;
 }
