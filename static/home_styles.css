@@ -136,7 +136,7 @@ body {
     margin-top: 20px;
     width: 200px;
     background-color: #7d9758;
-    border-radius: 30px;
+    border-radius: 50px;
     border: 2px solid #7d9758;
     padding: 20px;
     float: left;
@@ -181,7 +181,7 @@ body {
 
 #searchbar {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 50px;
 }
 
@@ -191,29 +191,54 @@ body {
     font-size: 20px;
     border-color: lightgrey;
     border-style: solid;
-    border-radius: 2px;
+    border-radius: 50px;
     width: 50%;
-    border-radius: 15px;
     outline: none;
+}
+
+#user_input input {
+    padding-left: 80px;
 }
 
 .subheading {
     text-align: center;
+    font-size: 45px;
+    margin: auto;
     margin-top: -15px;
-    color: #506423;
-}
-
-.subheading a {
-    cursor: pointer;
-    transition-duration: 0.2s;
     color: #7d9758;
-}
-
-.subheading a:hover {
-    font-weight: bold;
-    color: #506423;
+    padding-top: 10px;
     padding-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-width: 3.1px;
     width: fit-content;
+    font-weight: bold;
+    cursor: default;
+}
+
+.filters {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.filter_button {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    background-color: #b3b794;
+    border-radius: 50px;
+    border: 2px solid #b3b794;
+    padding: 12px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    color: #506423;
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition-duration: 0.3s;
+}
+
+.filter_button:hover{
+    cursor: pointer;
+    width: 150px;
 }

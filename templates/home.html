@@ -34,18 +34,26 @@
             <p class="description">Medicinal plants have been a resource for healing in local communities around the world for thousands of years. 
                 "Herbal Healing" is dedicated to promote the knowledge, use and delight of herbs in everyday life.</p>
             <a href="{{url_for('repository')}}"> <!-- repository button -->
-                <button class="subtitle_button" type="button" href="repository"><span>REPOSITORY</span></button>
+                <button class="subtitle_button" type="button"><span>REPOSITORY</span></button>
             </a>
         </div>
     </div>
     <div id="page">
         <div id="searchbar"> <!-- search bar -->
             <form id="user_input" action="/search" method="post">
+                <i class="fa fa-search" style="position: relative; color: grey; z-index: 999; left: 60px; top: -2px;"></i>
                 <input type="text" id="search" placeholder="search for a herb . . ." name="filter">
             </form>
         </div>
-        <h1 style="text-align: center; color: #506423; font-size: 26px;">or</h1>
-        <h1 class="subheading">explore by <a>rarity</a></h1>
+        <h1 style="text-align: center; color: #506423; font-size: 26px; cursor: default;">or explore by</h1>
+        <h1 class="subheading">rarity</h1>
+        <div class="filters">
+            <a href="{{url_for('repository', rarity='common')}}">
+                <button class="filter_button" type="button">COMMON</button>
+            </a>
+                <button class="filter_button" type="button" href="{{url_for('repository', rarity='rare')}}">RARE</button>
+                <button class="filter_button" type="button" href="{{url_for('repository', rarity='unique')}}">UNIQUE</button>
+        </div>
     </div>
     <div>
         <h1>gallery</h1>
