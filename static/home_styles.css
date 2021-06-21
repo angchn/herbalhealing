@@ -4,7 +4,7 @@ body {
     background-color: white;
     max-width: 100%;
     overflow-x: hidden;
-    height: 100%
+    height: 100%;
 }
 
 #bar {
@@ -94,7 +94,7 @@ body {
     margin-top: 0;
     position: static;
     display: inline-block;
-    height: 88vh;
+    height: 91vh;
 }
 
 #banner_image {
@@ -182,6 +182,7 @@ body {
 #searchbar {
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 #search {
@@ -194,4 +195,25 @@ body {
     width: 50%;
     border-radius: 15px;
     outline: none;
+}
+
+.subheading {
+    text-align: center;
+    margin-top: -15px;
+    color: #506423;
+}
+
+.subheading a {
+    cursor: pointer;
+    transition-duration: 0.2s;
+    color: #7d9758;
+}
+
+.subheading a:hover {
+    font-weight: bold;
+    color: #506423;
+    padding-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
 }
