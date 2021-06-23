@@ -181,7 +181,7 @@ body {
 
 #searchbar {
     text-align: center;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
 }
 
@@ -216,7 +216,7 @@ body {
 }
 
 .filters {
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -241,4 +241,9 @@ body {
 .filter_button:hover{
     cursor: pointer;
     width: 150px;
+}
+
+.filter_button a {
+    text-decoration: none;
+    color: #506423;
 }

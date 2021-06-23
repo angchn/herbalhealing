@@ -49,6 +49,26 @@ def repository():
         sql += " WHERE type.classification='root'"
     elif request.args.get ('type') == 'seed': #sort by type (seed).
         sql += " WHERE type.classification='seed'"
+    elif request.args.get ('use') == 'anxiety': #sort by use (anxiety).
+        sql += " WHERE use.category='anxiety'"
+    elif request.args.get ('use') == 'fever': #sort by use (fever).
+        sql += " WHERE use.category='fever'"
+    elif request.args.get ('use') == 'flu': #sort by use (flu).
+        sql += " WHERE use.category='flu'"
+    elif request.args.get ('use') == 'headache': #sort by use (headache).
+        sql += " WHERE use.category='headache'"
+    elif request.args.get ('use') == 'heart disease': #sort by use (heart disease).
+        sql += " WHERE use.category='heart disease'"
+    elif request.args.get ('use') == 'inflammation': #sort by use (inflammation).
+        sql += " WHERE use.category='inflammation'"
+    elif request.args.get ('use') == 'insomnia': #sort by use (insomnia).
+        sql += " WHERE use.category='insomnia'"
+    elif request.args.get ('use') == 'skin conditions': #sort by use (skin conditions).
+        sql += " WHERE use.category='skin conditions'"
+    elif request.args.get ('use') == 'stomach upsets': #sort by use (stomach upsets).
+        sql += " WHERE use.category='stomach upsets'"
+    elif request.args.get ('use') == 'wound healing': #sort by use (wound healing).
+        sql += " WHERE use.category='wound healing'"
     cursor.execute(sql)
     results = cursor.fetchall()
     return render_template("repository.html", results=results)
@@ -79,6 +99,7 @@ def herb(id):
 
 @app.route ("/gallery")
 def gallery():
+    #gallery page, displays photos of herbs.
     return render_template("gallery.html")
 
 @app.route ("/about")

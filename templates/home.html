@@ -48,11 +48,17 @@
         <h1 style="text-align: center; color: #506423; font-size: 26px; cursor: default;">or explore by</h1>
         <h1 class="subheading">rarity</h1>
         <div class="filters">
-            <a href="{{url_for('repository', rarity='common')}}">
-                <button class="filter_button" type="button">COMMON</button>
-            </a>
-                <button class="filter_button" type="button" href="{{url_for('repository', rarity='rare')}}">RARE</button>
-                <button class="filter_button" type="button" href="{{url_for('repository', rarity='unique')}}">UNIQUE</button>
+                <button class="filter_button" type="button"><a href="{{url_for('repository', rarity='common')}}">COMMON</a></button>
+                <button class="filter_button" type="button"><a href="{{url_for('repository', rarity='rare')}}">RARE</a></button>
+                <button class="filter_button" type="button"><a href="{{url_for('repository', rarity='unique')}}">UNIQUE</a></button>
+        </div>
+        <h1 class="subheading" style="padding-top: 50px;">type</h1>
+        <div class="filters">
+                <button class="filter_button" type="button"><a href="{{url_for('repository', type='flower')}}">FLOWER</a></button>
+                <button class="filter_button" type="button"><a href="{{url_for('repository', type='fruit')}}">FRUIT</a></button>
+                <button class="filter_button" type="button"><a href="{{url_for('repository', type='leaf')}}">LEAF</a></button>
+                <button class="filter_button" type="button"><a href="{{url_for('repository', type='seed')}}">SEED</a></button>
+                <button class="filter_button" type="button"><a href="{{url_for('repository', type='root')}}">ROOT</a></button>
         </div>
     </div>
     <div>
