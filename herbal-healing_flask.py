@@ -28,7 +28,7 @@ def repository():
     #repository page, where all data are displayed in a table.
     cursor = get_db().cursor()
     #sql statement, displaying data from foreign key onto primary key.
-    sql = "SELECT herb.id, herb.name, rarity.level, type.classification, herb.place_of_origin, herb.description, use.category FROM herb JOIN rarity ON herb.rarity = rarity.id JOIN type ON herb.type = type.id JOIN use ON herb.use_1 = use.id"
+    sql = "SELECT herb.id, herb.name, rarity.level, type.classification, herb.place_of_origin, herb.description, use.category FROM herb JOIN rarity ON herb.rarity = rarity.id JOIN type ON herb.type = type.id JOIN use ON herb.use = use.id"
     if request.args.get ('name')  == 'a-z': #sort by name (a-z).
         sql += " ORDER BY herb.name"
     elif request.args.get ('name') == 'z-a': #sort by name (z-a).

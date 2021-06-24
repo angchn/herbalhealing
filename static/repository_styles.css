@@ -104,70 +104,48 @@ body {
     padding-bottom: 20px;
 }
 
-#filter_name {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    color: #506423;
-    padding: 12px;
-    font-size: 14px;
-    border: 2px solid lightgray;
-    background-color: white;
-    transition-duration: 0.2s;
-    outline: none;
+#filter {
+    overflow: hidden; 
+    text-align: center;
+    width: 50%;
+    display: inline-block;
 }
 
-#filter_name:hover {background-color: #ddd;}
+.filter_button {
+    border-color: lightgrey;
+    border-style: solid 2px;
+    color: #414a4c;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    float: left;
+    padding: 12px;
+    font-size: 14px;
+    width: 50;
+    transition-duration: 0.2s;
+}
 
-#filter_name:hover #option_content {display: block;}
+.filter_button:hover {
+    background-color: lightgrey;
+}
 
-#option_content {
-    font-size: 12px;
+.filter_content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 200px;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-#option-content a {
-    color: #506423;
-    padding: 12px 16px;
+.filter_content a {
+    float: none;
+    color: #414a4c;
     text-decoration: none;
+}
+
+.filter_button:hover .filter_content {
     display: block;
-    transition-duration: 0.2s;
-    position: relative;
 }
-
-#filter-content a:hover {background-color: #ddd;}
-
-#filter_name:hover #option-content {display: block;}
-
-#filter-dropdown:hover #filter {background-color: lightgrey;}
-
-#option {
-    font-weight: bold;
-}
-
-#option-content {
-    font-size: 12px;
-    display: none;
-    position: relative;
-    background-color: #f1f1f1;
-    min-width: 80px;
-    margin-left: 30px;  
-}
-
-#option-content a {
-    color: #506423;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition-duration: 0.2s;
-}
-
-#option-content a:hover {background-color: #ddd;}
-
-#filter-content:hover #option-content {display: block;}
 
 #searchbar{
     float: right;
@@ -186,6 +164,7 @@ body {
 
 #repository_table table {
     border-collapse: collapse;
+    color: #414a4c;
     margin: auto;
     width: 90%;
     margin-bottom: 50px;

@@ -27,50 +27,51 @@
     <div id="page">
         <h1 id="page_name">REPOSITORY</h1> <!-- page name-->
         <div id="sort"> <!-- sorting bar -->
-            <div id="sort_buttons">
-                    <button id="filter_name">SORT BY NAME</button> <!-- sort button -->
-                        <div id="option-content">
-                            <a href="{{url_for('repository', name='a-z')}}">A-Z</a>
-                            <a href="{{url_for('repository', name='z-a')}}">Z-A</a>
-                        </div>
-                <!--
-                <div id="filter-dropdown">
-                    <button id="filter">SORT BY</button>
-                    <div id="filter_content">
-                        <a id="option" href="{{url_for('repository')}}">RARITY</a>
-                            <div id="option-content">
-                                <a href="{{url_for('repository', rarity='common')}}">COMMON</a>
-                                <a href="{{url_for('repository', rarity='rare')}}">RARE</a>
-                                <a href="{{url_for('repository', rarity='unique')}}">UNIQUE</a>
-                            </div>
+            <div id="filter">
+                <div class="filter_button">
+                    <a>NAME</a>
+                    <i class="fa fa-caret-down" style="color: #414a4c;"></i>
+                    <div class="filter_content">
+                        <a href="{{url_for('repository', name='a-z')}}">A-Z</a>
+                        <a href="{{url_for('repository', name='z-a')}}">Z-A</a>
+                    </div>
                 </div>
-                <div id="filter-dropdown">
-                    <button id="filter">SORT BY</button> 
-                        <a id="option" href="{{url_for('repository')}}">TYPE</a> 
-                            <div id="option-content">
-                                <a href="{{url_for('repository', type='flower')}}">FLOWER</a>
-                                <a href="{{url_for('repository', type='fruit')}}">FRUIT</a>
-                                <a href="{{url_for('repository', type='leaf')}}">LEAF</a>
-                                <a href="{{url_for('repository', type='root')}}">ROOT</a>
-                                <a href="{{url_for('repository', type='seed')}}">SEED</a>
-                            </div>
+                <div class="filter_button">
+                    <a>RARITY</a>
+                    <i class="fa fa-caret-down" style="color: #414a4c;"></i>
+                    <div class="filter_content">
+                        <a href="{{url_for('repository', rarity='common')}}">COMMON</a>
+                        <a href="{{url_for('repository', rarity='rare')}}">RARE</a>
+                        <a href="{{url_for('repository', rarity='unique')}}">UNIQUE</a>
+                    </div>
                 </div>
-                <div id="filter-dropdown">
-                    <button id="filter">SORT BY</button> 
-                        <a id="option" href="{{url_for('repository')}}">MAIN USE</a> 
-                            <div id="option-content">
-                                <a href="{{url_for('repository', use='anxiety')}}">ANXIETY</a>
-                                <a href="{{url_for('repository', use='fever')}}">FEVER</a>
-                                <a href="{{url_for('repository', use='flu')}}">FLU</a>
-                                <a href="{{url_for('repository', use='headache')}}">HEADACHE</a>
-                                <a href="{{url_for('repository', use='heart disease')}}">HEART DISEASE</a>
-                                <a href="{{url_for('repository', use='inflammation')}}">INFLAMMATION</a>
-                                <a href="{{url_for('repository', use='insomnia')}}">INSOMNIA</a>
-                                <a href="{{url_for('repository', use='skin conditions')}}">SKIN CONDITIONS</a>
-                                <a href="{{url_for('repository', use='stomach upsets')}}">STOMACH UPSETS</a>
-                                <a href="{{url_for('repository', use='wound healing')}}">WOUND HEALING</a>
-                            </div>
-                </div> -->
+                <div class="filter_button">
+                    <a>TYPE</a>
+                    <i class="fa fa-caret-down" style="color: #414a4c;"></i>
+                    <div class="filter_content">
+                        <a href="{{url_for('repository', type='flower')}}">FLOWER</a>
+                        <a href="{{url_for('repository', type='fruit')}}">FRUIT</a>
+                        <a href="{{url_for('repository', type='leaf')}}">LEAF</a>
+                        <a href="{{url_for('repository', type='root')}}">ROOT</a>
+                        <a href="{{url_for('repository', type='seed')}}">SEED</a>
+                    </div>
+                </div>
+                <div class="filter_button">
+                    <a>MAIN USE</a>
+                    <i class="fa fa-caret-down" style="color: #414a4c;"></i>
+                    <div class="filter_content">
+                        <a href="{{url_for('repository', use='anxiety')}}">ANXIETY</a>
+                        <a href="{{url_for('repository', use='fever')}}">FEVER</a>
+                        <a href="{{url_for('repository', use='flu')}}">FLU</a>
+                        <a href="{{url_for('repository', use='headache')}}">HEADACHE</a>
+                        <a href="{{url_for('repository', use='heart disease')}}">HEART DISEASE</a>
+                        <a href="{{url_for('repository', use='inflammation')}}">INFLAMMATION</a>
+                        <a href="{{url_for('repository', use='insomnia')}}">INSOMNIA</a>
+                        <a href="{{url_for('repository', use='skin conditions')}}">SKIN CONDITIONS</a>
+                        <a href="{{url_for('repository', use='stomach upsets')}}">STOMACH UPSETS</a>
+                        <a href="{{url_for('repository', use='wound healing')}}">WOUND HEALING</a>
+                    </div>
+                </div>
             </div>
             <div id="searchbar"> <!-- search bar -->
                 <form id="user_input" action="/search" method="post">
