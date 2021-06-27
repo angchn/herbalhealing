@@ -29,7 +29,7 @@
         <div id="sort"> <!-- sorting bar -->
             <div id="filter">
                 <div class="filter_button">
-                    <a>NAME</a>
+                    <a class="filter_name">NAME</a>
                     <i class="fa fa-caret-down" style="color: #414a4c;"></i>
                     <div class="filter_content">
                         <a href="{{url_for('repository', name='a-z')}}">A-Z</a>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="filter_button">
-                    <a>RARITY</a>
+                    <a class="filter_name">RARITY</a>
                     <i class="fa fa-caret-down" style="color: #414a4c;"></i>
                     <div class="filter_content">
                         <a href="{{url_for('repository', rarity='common')}}">COMMON</a>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="filter_button">
-                    <a>TYPE</a>
+                    <a class="filter_name">TYPE</a>
                     <i class="fa fa-caret-down" style="color: #414a4c;"></i>
                     <div class="filter_content">
                         <a href="{{url_for('repository', type='flower')}}">FLOWER</a>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="filter_button">
-                    <a>MAIN USE</a>
+                    <a class="filter_name">MAIN USE</a>
                     <i class="fa fa-caret-down" style="color: #414a4c;"></i>
                     <div class="filter_content">
                         <a href="{{url_for('repository', use='anxiety')}}">ANXIETY</a>

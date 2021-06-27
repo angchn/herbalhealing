@@ -112,39 +112,49 @@ body {
 }
 
 .filter_button {
-    border-color: lightgrey;
-    border-style: solid 2px;
     color: #414a4c;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
     float: left;
     padding: 12px;
     font-size: 14px;
-    width: 50;
+    width: 80px;
     transition-duration: 0.2s;
+    cursor: pointer;
+    text-align: left;
 }
 
-.filter_button:hover {
-    background-color: lightgrey;
+.filter_button:hover .filter_name {
+    font-weight: bold;
+    transition-duration: 0.2s;
 }
 
 .filter_content {
     display: none;
     position: absolute;
-    min-width: 160px;
+    width: 160px;
+    background: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-top: 10px;  
+    font-size: 12px;
 }
 
 .filter_content a {
     float: none;
     color: #414a4c;
     text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px;
 }
 
 .filter_button:hover .filter_content {
     display: block;
+}
+
+.filter_content a:hover {
+    background-color: lightgrey;
 }
 
 #searchbar{
@@ -175,17 +185,18 @@ body {
     border: 1px solid #506423;
     text-align: left;
     padding: 8px;
-    cursor: pointer;
 }
 
 #categories_row {
     background-color: #7d9758;
     color: white;
+    cursor: default;
 }
 
 #herb_row:hover, #herb_row:focus-within {
     background: #d0e1bf;
     outline: none;
+    cursor: pointer;
 }
 
 td > a:first-child {

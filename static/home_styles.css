@@ -115,7 +115,7 @@ body {
     vertical-align: middle;
     position: relative;
     margin-top: 150px; 
-    color: #414a4c;
+    color: #506423;
     width: 50%;
     font-weight: lighter;
 }
@@ -218,6 +218,7 @@ body {
 .filters {
     padding-top: 20px;
     text-align: center;
+    text-decoration: none;
 }
 
 .filter_button {
@@ -229,7 +230,24 @@ body {
     border-radius: 50px;
     border: 2px solid #b3b794;
     padding: 12px;
+    cursor: pointer;
+    color: #506423;
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
     transition-duration: 0.3s;
+}
+
+.filter_button_hd {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    background-color: #b3b794;
+    border-radius: 50px;
+    border: 2px solid #b3b794;
+    padding: 12px;
     cursor: pointer;
     color: #506423;
     outline: none;
@@ -243,7 +261,12 @@ body {
     width: 150px;
 }
 
-.filter_button a {
+.filter_button_hd:hover{
+    cursor: pointer;
+    width: 200px;
+}
+
+.filter_button a,.filter_button_hd a {
     text-decoration: none;
     color: #506423;
 }
