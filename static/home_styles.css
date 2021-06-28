@@ -9,7 +9,7 @@ body {
 
 #bar {
     background-color: #7d9758;
-    height: 90px;
+    height: 7vh;
     position: sticky;
     top: 0;
     z-index: 99;
@@ -91,10 +91,10 @@ body {
 
 #banner {
     width: 100%;
-    margin-top: 0;
+    margin: auto;
     position: static;
     display: inline-block;
-    height: 91vh;
+    height: 93vh;
 }
 
 #banner_image {
@@ -114,7 +114,7 @@ body {
     font-size: 40px;
     vertical-align: middle;
     position: relative;
-    margin-top: 150px; 
+    margin-top: 20%;
     color: #506423;
     width: 50%;
     font-weight: lighter;
@@ -175,13 +175,13 @@ body {
 #page {
     margin-right: auto;
     margin-left: auto;
-    height: 1000px;
+    height: 80vh;
     background-color: #c7c69c;
 }
 
 #searchbar {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 10%;
     padding-bottom: 50px;
 }
 
@@ -269,4 +269,63 @@ body {
 .filter_button a,.filter_button_hd a {
     text-decoration: none;
     color: #506423;
+}
+
+#footer {
+    background-color: #7d9758;
+    height: 20vh;
+    margin-bottom: 0;
+}
+
+#footer_text {
+    width: 80%;
+    margin: auto;
+    padding-top: 2%;
+}
+
+#footer_title {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: default;
+}
+
+.footer_name {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+.footer_column {
+    padding-top: 10px;
+    width: 10%;
+    float: left;
+    position: relative;
+}
+
+.footer_button {
+    text-decoration: none;
+    color: #c7c69c;
+    transition-duration: 0.2s;
+    width: fit-content;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.footer_button:hover {
+    font-weight: bold;
+    color: white;
+}
+
+#copyright {
+    color: #c7c69c; 
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 14vh;
+    position: absolute;
+    float: center;
+    width: 80%;
+    cursor: default;
 }

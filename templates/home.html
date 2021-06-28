@@ -41,7 +41,7 @@
     <div id="page">
         <div id="searchbar"> <!-- search bar -->
             <form id="user_input" action="/search" method="post">
-                <i class="fa fa-search" style="position: relative; color: grey; z-index: 999; left: 60px; top: -2px;"></i>
+                <i class="fa fa-search" style="position: relative; color: grey; z-index: 1; left: 60px; top: -2px;"></i>
                 <input type="text" id="search" placeholder="search for a herb . . ." name="filter">
             </form>
         </div>
@@ -68,9 +68,37 @@
             <button class="filter_button" type="button"><a href="{{url_for('repository', use='headache')}}">HEADACHE</a></button>
             <button class="filter_button_hd" type="button"><a href="{{url_for('repository', use='heart disease')}}">HEART DISEASE</a></button>
         </div>
+        <div class="filters">
+            <button class="filter_button_hd" type="button" ><a href="{{url_for('repository', use='inflammation')}}">INFLAMMATION</a></button>
+            <button class="filter_button" type="button"><a href="{{url_for('repository', use='insomnia')}}">INSOMNIA</a></button>
+            <button class="filter_button_hd" type="button"><a href="{{url_for('repository', use='skin conditions')}}">SKIN CONDITIONS</a></button>
+            <button class="filter_button_hd" type="button"><a href="{{url_for('repository', use='stomach upsets')}}">STOMACH UPSETS</a></button>
+            <button class="filter_button_hd" type="button"><a href="{{url_for('repository', use='wound healing')}}">WOUND HEALING</a></button>
+        </div>
     </div>
     <div>
         <h1>gallery</h1>
+    </div>
+    <div id="footer">
+        <div id="footer_text">
+            <div class="footer_name">
+                <h1 id="footer_title">HERBAL HEALING</h1>
+                <p style="color: #c7c69c; margin-top: -10px; cursor: default;">The knowledge, use and delight of herbs in everyday life.</p>
+            </div>
+            <div class="footer_column" style="margin-left: 30%; margin-top: 2%;">
+                <a class="footer_button" href="{{url_for('home')}}">HOME</a>
+                <a class="footer_button" href="{{url_for('repository')}}">REPOSITORY</a>
+            </div>
+            <div class="footer_column" style="margin-left: 5%; margin-top: 2%;">
+                <a class="footer_button" href="{{url_for('about')}}">ABOUT</a>
+                <a class="footer_button" href="{{url_for('contact')}}">CONTACT</a>
+            </div>
+            <div class="footer_column" style="margin-left: 5%; margin-top: 2%;">
+                <a class="footer_button" href="https://github.com/angelaychen/website" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </div>
+            <p id="copyright">© 2021 Angela Chen. All Rights Reserved.</p>
+        </div>
+        
     </div>
 </body>
 </html>

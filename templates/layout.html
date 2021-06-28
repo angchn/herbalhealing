@@ -26,5 +26,26 @@
     </div>
     {% block content %}
     {% endblock %}
+    <div id="footer">
+        <div id="footer_text">
+            <div class="footer_name">
+                <h1 id="footer_title">HERBAL HEALING</h1>
+                <p style="color: #c7c69c; margin-top: -10px; cursor: default;">The knowledge, use and delight of herbs in everyday life.</p>
+            </div>
+            <div class="footer_column" style="margin-left: 30%; margin-top: 2%;">
+                <a class="footer_button" href="{{url_for('home')}}">HOME</a>
+                <a class="footer_button" href="{{url_for('repository')}}">REPOSITORY</a>
+            </div>
+            <div class="footer_column" style="margin-left: 5%; margin-top: 2%;">
+                <a class="footer_button" href="{{url_for('about')}}">ABOUT</a>
+                <a class="footer_button" href="{{url_for('contact')}}">CONTACT</a>
+            </div>
+            <div class="footer_column" style="margin-left: 5%; margin-top: 2%;">
+                <a class="footer_button" href="https://github.com/angelaychen/website" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </div>
+            <p id="copyright">© 2021 Angela Chen. All Rights Reserved.</p>
+        </div>
+        
+    </div>
 </body>
 </html>

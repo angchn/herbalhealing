@@ -135,3 +135,62 @@ body {
     background-color: #c7c69c;
     position: relative;
 }
+
+#footer {
+    background-color: #7d9758;
+    height: 20vh;
+    margin-bottom: 0;
+}
+
+#footer_text {
+    width: 80%;
+    margin: auto;
+    padding-top: 2%;
+}
+
+#footer_title {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: default;
+}
+
+.footer_name {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+.footer_column {
+    padding-top: 10px;
+    width: 10%;
+    float: left;
+    position: relative;
+}
+
+.footer_button {
+    text-decoration: none;
+    color: #c7c69c;
+    transition-duration: 0.2s;
+    width: fit-content;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.footer_button:hover {
+    font-weight: bold;
+    color: white;
+}
+
+#copyright {
+    color: #c7c69c; 
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 14vh;
+    position: absolute;
+    float: center;
+    width: 80%;
+    cursor: default;
+}
