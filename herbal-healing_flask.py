@@ -112,6 +112,19 @@ def contact():
     #contact page, displays email and other information.
     return render_template("contact.html")
 
+@app.route ("/message", methods=["GET", "POST"])
+def message():
+    #allows user to input their name, email and message as contact.
+    if request.method == "POST":
+        cursor = get_db().cursor()
+        user_name = request.form["user_name"]
+        user_email = request.form["user_email"]
+        user_message = request.form["user_message"]
+        sql = "INSERT INTO contact(user_name, user_email, user_message) VALUES (?, ?, ?)"
+        cursor.execute(sql,(user_name, user_email, user_message))
+        get_db().commit()
+    return redirect ('/contact')
+
 @app.route ("/error")
 def error():
     #error page, for when user input returns no results.

@@ -9,7 +9,7 @@ body {
 
 #bar {
     background-color: #7d9758;
-    height: 7vh;
+    height: 90px;
     position: sticky;
     top: 0;
     z-index: 99;
@@ -114,7 +114,7 @@ body {
     font-size: 40px;
     vertical-align: middle;
     position: relative;
-    margin-top: 20%;
+    margin-top: 10%;
     color: #506423;
     width: 50%;
     font-weight: lighter;
@@ -175,13 +175,13 @@ body {
 #page {
     margin-right: auto;
     margin-left: auto;
-    height: 80vh;
+    height: 100vh;
     background-color: #c7c69c;
 }
 
 #searchbar {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 50px;
 }
 
@@ -273,14 +273,15 @@ body {
 
 #footer {
     background-color: #7d9758;
-    height: 20vh;
-    margin-bottom: 0;
+    height: 25vh;
+    margin: 0;
 }
 
 #footer_text {
     width: 80%;
     margin: auto;
     padding-top: 2%;
+    background-color: #7d9758; 
 }
 
 #footer_title {
@@ -322,10 +323,12 @@ body {
 #copyright {
     color: #c7c69c; 
     text-align: center;
-    margin-bottom: 0;
-    margin-top: 14vh;
+    padding-bottom: 5px;
+    margin-top: 18vh;
     position: absolute;
     float: center;
-    width: 80%;
+    width: 100%;
     cursor: default;
+    background-color: #7d9758;
+    font-size: 12px;
 }

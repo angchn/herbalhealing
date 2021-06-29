@@ -136,16 +136,40 @@ body {
     position: relative;
 }
 
+.page_margin {
+    width: 80%;
+    margin: auto;
+}
+
+.page_title {
+    padding: 10px;
+    letter-spacing: 3px;
+    color: #506423;
+}
+
+#user_input {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+#name {
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
 #footer {
     background-color: #7d9758;
-    height: 20vh;
-    margin-bottom: 0;
+    height: 25vh;
+    margin: 0;
 }
 
 #footer_text {
     width: 80%;
     margin: auto;
     padding-top: 2%;
+    background-color: #7d9758; 
 }
 
 #footer_title {
@@ -187,10 +211,12 @@ body {
 #copyright {
     color: #c7c69c; 
     text-align: center;
-    margin-bottom: 0;
-    margin-top: 14vh;
+    padding-bottom: 5px;
+    margin-top: 18vh;
     position: absolute;
     float: center;
-    width: 80%;
+    width: 100%;
     cursor: default;
+    background-color: #7d9758;
+    font-size: 12px;
 }
