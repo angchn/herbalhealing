@@ -65,7 +65,7 @@ body {
     position: relative;
 }
 
-#button_about, #button_contact, #button_gallery {
+#button_about, .button_contact, #button_gallery {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     border: none;
@@ -81,12 +81,20 @@ body {
     position: relative;
 }
 
-#button_repository:hover, #button_about:hover, #button_contact:hover, #button_gallery:hover {
+#button_repository:hover, #button_about:hover, .button_contact:hover, #button_gallery:hover {
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-width: 3.1px;
     width: fit-content;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    color:#405a29;
+    text-decoration: line-through 2px;
+    font-weight: bold;
 }
 
 #banner {
@@ -149,14 +157,65 @@ body {
 
 #user_input {
     padding-bottom: 5%;
-    text-align: center;
+    margin-top: 15%;
 }
 
 #name {
-    border: none;
-    border-bottom: 2px solid;
-    outline: none;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    border: none;
+    border-bottom: 2px solid #506423;
+    outline: none;
+    padding-bottom: 5px;
+    width: 15%;
+    font-size: 16px;
+}
+
+#email {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    border: none;
+    border-bottom: 2px solid #506423;
+    outline: none;
+    padding-bottom: 5px;
+    width: 25%;
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+#message {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    border: none;
+    padding-bottom: 5px;
+    background-color: #e4f0d9;
+    border-radius: 5px; 
+    padding: 10px;
+    outline: none;
+    width: 42%;
+    font-size: 16px;
+    margin-top: 3%;
+    border-bottom: 2px solid #506423;
+    resize: none;
+}
+
+#submit {
+    margin-top: 3%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    background-color: #7d9758;
+    border-radius: 50px;
+    border: 3px solid #7d9758;
+    padding: 15px;
+    float: left;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition-duration: 0.3s;
+}
+
+#submit:hover {
+    background-color: white;
+    color: #7d9758;
 }
 
 #footer {

@@ -1,16 +1,36 @@
-{% extends "layout.html" %}
-{% block title %} Contact {% endblock %}
-    {% block content %}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for('static',filename='styles.css')}}>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <title>Contact | Herbal Healing</title>
+</head> 
+<body>
+    <div id="bar"> <!-- navigation bar -->
+        <div id="header">
+            <div id="title"> <!-- title of the website -->
+                <a href="{{url_for('home')}}">
+                    <i class="fas fa-seedling" style="font-family: Font Awesome 5 Free; font-size: 30px; color: white;"></i>
+                    HERBAL HEALING
+                </a>
+            </div>
+            <div class="menu"> <!-- menu bar -->
+                <a id="button_repository" href="{{url_for('repository')}}">REPOSITORY</a> <!-- repository button -->
+                <a id="button_gallery" href="{{url_for('gallery')}}">GALLERY</a> <!-- gallery button-->
+                <a id="button_about" href="{{url_for('about')}}">ABOUT</a> <!-- about button -->
+                <a class="button_contact disabled" href="{{url_for('contact')}}">CONTACT</a> <!-- contact button-->
+            </div>
+        </div>
+    </div>
     <div class="page_margin">
         <h1 class="page_title">CONTACT</h1>
         <form id="user_input" action="/message" method="post">
-            <input type="text" id="name" placeholder="name" name="user_name">
+            <input type="text" id="name" required placeholder="name" name="user_name">
             <input type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required id="email" placeholder="email" name="user_email"><br>
-            <input type="text" id="message" placeholder="message" name="user_message"><br>
-            <input type="submit" value="submit">
+            <textarea id="message" required  placeholder="message" rows = "5" name = "user_message"></textarea><br>
+            <input type="submit" id="submit" value="SUBMIT">
         </form>
     </div>
     
-
-    {% endblock %}
