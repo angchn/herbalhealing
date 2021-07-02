@@ -117,11 +117,12 @@ def message():
     #allows user to input their name, email and message as contact.
     if request.method == "POST":
         cursor = get_db().cursor()
-        user_name = request.form["user_name"]
+        user_first_name = request.form["user_first_name"]
+        user_last_name = request.form["user_last_name"]
         user_email = request.form["user_email"]
         user_message = request.form["user_message"]
-        sql = "INSERT INTO contact(user_name, user_email, user_message) VALUES (?, ?, ?)"
-        cursor.execute(sql,(user_name, user_email, user_message))
+        sql = "INSERT INTO contact(user_first_name, user_last_name, user_email, user_message) VALUES (?, ?, ?, ?)"
+        cursor.execute(sql,(user_first_name, user_last_name, user_email, user_message))
         get_db().commit()
     return redirect ('/contact')
 
