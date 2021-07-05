@@ -34,7 +34,41 @@
             <input type="submit" id="submit" value="SEND">
         </form>
         <div id="contact_card">
-            <h1 id="information">CONTACT INFO</h1>
+            <h1 id="contact-title">CONTACT INFORMATION</h1>
+            <p class="contact-text">Have questions or require assistance?</p>
+            <p class="contact-text" style="margin-top: -10px;">We're happy to help! Please fill out the form and we'll get in touch.</p>
+            <br>
+            <i class="fas fa-solid fa-map-marker-alt" style="font-family: Font Awesome 5 Free; font-size: 20px; color: white;"></i>
+            <h2 id="contact_subtitle">Burnside High School</h2>
+            <p class="contact_information">131 Greers Road, Burnside, 8053</p>
+            <p class="contact_information">Christchurch, New Zealand</p>
+            <br>
+            <i class="fas fa-solid fa-envelope" style="font-family: Font Awesome 5 Free; font-size: 20px; color: white;"></i>
+            <p class="contact_information" style="margin-top: -5%;">18003@burnside.school.nz</p>
+            <br>
+            <i class="fas fa-solid fa-phone" style="font-family: Font Awesome 5 Free; font-size: 20px; color: white;"></i>
         </div>
     </div>
+    <div id="footer">
+        <div id="footer_text">
+            <div class="footer_name">
+                <h1 id="footer_title">HERBAL HEALING</h1>
+                <p style="color: #c7c69c; margin-top: -10px; cursor: default;">The knowledge, use and delight of herbs in everyday life.</p>
+            </div>
+            <div class="footer_column" style="margin-left: 30%; margin-top: 2%;">
+                <a class="footer_button" href="{{url_for('home')}}">HOME</a>
+                <a class="footer_button" href="{{url_for('repository')}}">REPOSITORY</a>
+            </div>
+            <div class="footer_column" style="margin-left: 5%; margin-top: 2%;">
+                <a class="footer_button" href="{{url_for('about')}}">ABOUT</a>
+                <a class="footer_button" href="{{url_for('contact')}}">CONTACT</a>
+            </div>
+            <div class="footer_column" style="margin-left: 5%; margin-top: 2%;">
+                <a class="footer_button" href="https://github.com/angelaychen/website" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </div>
+        </div>
+        <p id="copyright">© 2021 Angela Chen. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
     
