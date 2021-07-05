@@ -147,12 +147,13 @@ body {
 .page_margin {
     width: 80%;
     margin: auto;
-    height: 93vh;
+    height: 87vh;
 }
 
 .page_title {
     padding: 10px;
     letter-spacing: 3px;
+    margin-top: 5vh;
     color: #506423;
 }
 
@@ -224,7 +225,7 @@ body {
 }
 
 #contact_card {
-    width: 30%;
+    width: 35%;
     float: right;
     margin-top: 5%;
     background-color: #7d9758;

@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, g, render_template, request, redirect
+from flask import Flask, g, render_template, request, redirect, flash
 
 app = Flask(__name__)
 DATABASE = "plants.db"
@@ -115,6 +115,7 @@ def contact():
 @app.route ("/message", methods=["GET", "POST"])
 def message():
     #allows user to input their name, email and message as contact.
+    error = None
     if request.method == "POST":
         cursor = get_db().cursor()
         user_first_name = request.form["user_first_name"]
@@ -124,7 +125,10 @@ def message():
         sql = "INSERT INTO contact(user_first_name, user_last_name, user_email, user_message) VALUES (?, ?, ?, ?)"
         cursor.execute(sql,(user_first_name, user_last_name, user_email, user_message))
         get_db().commit()
-    return redirect ('/contact')
+        flash('Thank you for your time!')
+    else:
+        error = "Please enter valid details."
+    return redirect ('/contact', error=error)
 
 @app.route ("/error")
 def error():
