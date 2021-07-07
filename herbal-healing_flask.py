@@ -3,6 +3,7 @@ from flask import Flask, g, render_template, request, redirect, flash
 
 app = Flask(__name__)
 DATABASE = "plants.db"
+app.secret_key = "supergirl07"
 
 def get_db():
     #connects database "plants.db" to Python file.
@@ -112,23 +113,20 @@ def contact():
     #contact page, displays email and other information.
     return render_template("contact.html")
 
-@app.route ("/message", methods=["GET", "POST"])
+@app.route ("/message", methods=["POST"])
 def message():
     #allows user to input their name, email and message as contact.
-    error = None
-    if request.method == "POST":
-        cursor = get_db().cursor()
-        user_first_name = request.form["user_first_name"]
-        user_last_name = request.form["user_last_name"]
-        user_email = request.form["user_email"]
-        user_message = request.form["user_message"]
-        sql = "INSERT INTO contact(user_first_name, user_last_name, user_email, user_message) VALUES (?, ?, ?, ?)"
-        cursor.execute(sql,(user_first_name, user_last_name, user_email, user_message))
-        get_db().commit()
-        flash('Thank you for your time!')
-    else:
-        error = "Please enter valid details."
-    return redirect ('/contact', error=error)
+    cursor = get_db().cursor()
+    user_first_name = request.form["user_first_name"]
+    user_last_name = request.form["user_last_name"]
+    user_email = request.form["user_email"]
+    user_message = request.form["user_message"]
+    sql = "INSERT INTO contact(user_first_name, user_last_name, user_email, user_message) VALUES (?, ?, ?, ?)"
+    cursor.execute(sql,(user_first_name, user_last_name, user_email, user_message))
+    get_db().commit()
+    flash ("Thank you for your time! We will get back to you shortly.", "response")
+    return redirect ("/contact")
+    
 
 @app.route ("/error")
 def error():

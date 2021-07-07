@@ -224,6 +224,11 @@ body {
     color: #7d9758;
 }
 
+#flash {
+    color: red;
+    text-align: center;
+}
+
 #contact_card {
     width: 35%;
     float: right;
