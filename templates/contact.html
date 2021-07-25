@@ -19,12 +19,12 @@
             <div class="menu"> <!-- menu bar -->
                 <a id="button_repository" href="{{url_for('repository')}}">REPOSITORY</a> <!-- repository button -->
                 <a id="button_gallery" href="{{url_for('gallery')}}">GALLERY</a> <!-- gallery button-->
-                <a id="button_about" href="{{url_for('about')}}">ABOUT</a> <!-- about button -->
+                <a class="button_about" href="{{url_for('about')}}">ABOUT</a> <!-- about button -->
                 <a class="button_contact disabled" href="{{url_for('contact')}}">CONTACT</a> <!-- contact button-->
             </div>
         </div>
     </div>
-    <div class="page_margin" style="width: 70%";>
+    <div class="page_margin" style="width: 80%";>
         <h1 class="page_title">CONTACT</h1>
         <form id="user_input" action="/message" method="post">
             <input type="text" id="name" required placeholder="first name" name="user_first_name">

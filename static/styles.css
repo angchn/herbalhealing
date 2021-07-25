@@ -65,7 +65,7 @@ body {
     position: relative;
 }
 
-#button_about, .button_contact, #button_gallery {
+.button_about, .button_contact, #button_gallery {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     border: none;
@@ -81,7 +81,7 @@ body {
     position: relative;
 }
 
-#button_repository:hover, #button_about:hover, .button_contact:hover, #button_gallery:hover {
+#button_repository:hover, .button_about:hover, .button_contact:hover, #button_gallery:hover {
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom-style: solid;
@@ -157,6 +157,10 @@ body {
     color: #506423;
 }
 
+#burnside_image {
+    width: 40%;
+}
+
 #user_input {
     padding-bottom: 5%;
     margin-top: 10%;
@@ -225,8 +229,11 @@ body {
 }
 
 #flash {
-    color: red;
-    text-align: center;
+    color: #7d9758;
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    margin-top: 15px;
 }
 
 #contact_card {

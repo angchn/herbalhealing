@@ -1,7 +1,54 @@
-{% extends "layout.html" %}
-{% block title %} About {% endblock %}
-    {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for('static',filename='styles.css')}}>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <title>Contact | Herbal Healing</title>
+</head> 
+<body>
+    <div id="bar"> <!-- navigation bar -->
+        <div id="header">
+            <div id="title"> <!-- title of the website -->
+                <a href="{{url_for('home')}}">
+                    <i class="fas fa-seedling" style="font-family: Font Awesome 5 Free; font-size: 30px; color: white;"></i>
+                    HERBAL HEALING
+                </a>
+            </div>
+            <div class="menu"> <!-- menu bar -->
+                <a id="button_repository" href="{{url_for('repository')}}">REPOSITORY</a> <!-- repository button -->
+                <a id="button_gallery" href="{{url_for('gallery')}}">GALLERY</a> <!-- gallery button-->
+                <a class="button_about disabled" href="{{url_for('about')}}">ABOUT</a> <!-- about button -->
+                <a class="button_contact" href="{{url_for('contact')}}">CONTACT</a> <!-- contact button-->
+            </div>
+        </div>
+    </div>
+    <div class="page_margin" style="width: 80%";>
+        <h1 class="page_title">ABOUT</h1>
+        <img src="/static/image/burnside.png" alt="Burnside High School" id="burnside_image">
+        <img src="/static/image/about.webp" alt="Plants Illustration">
+    </div>
 
-    <h1>CHARLIE HO</h1>
-
-    {% endblock %}
+    <div id="footer">
+        <div id="footer_text">
+            <div class="footer_name">
+                <h1 id="footer_title">HERBAL HEALING</h1>
+                <p style="color: #c7c69c; margin-top: -10px; cursor: default;">The knowledge, use and delight of herbs in everyday life.</p>
+            </div>
+            <div class="footer_column" style="margin-left: 30%; margin-top: 2%;">
+                <a class="footer_button" href="{{url_for('home')}}">HOME</a>
+                <a class="footer_button" href="{{url_for('repository')}}">REPOSITORY</a>
+            </div>
+            <div class="footer_column" style="margin-left: 5%; margin-top: 2%;">
+                <a class="footer_button" href="{{url_for('about')}}">ABOUT</a>
+                <a class="footer_button" href="{{url_for('contact')}}">CONTACT</a>
+            </div>
+            <div class="footer_column" style="margin-left: 5%; margin-top: 2%;">
+                <a class="footer_button" href="https://github.com/angelaychen/website" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </div>
+        </div>
+        <p id="copyright">© 2021 Angela Chen. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

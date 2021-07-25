@@ -126,7 +126,6 @@ def message():
     get_db().commit()
     flash ("Thank you for your time! We will get back to you shortly.", "response")
     return redirect ("/contact")
-    
 
 @app.route ("/error")
 def error():
