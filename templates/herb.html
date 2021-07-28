@@ -3,14 +3,18 @@
     {% block content %}
 
     <div id="banner"> <!-- displays herb id, herb name, herb rarity and herb type -->
+        <img src="/static/image/{{result[6]}}" alt="Herb Illustration" id="main_image">
         <h1 id="number">{{result[0]}}</h1>
         <div id="herb">
             <h2 id="herb_name">{{result[1]}}</h2>
-            <pre id="categories">{{result[2]}} | {{result[3]}}</pre>
+            <pre id="categories"><a href="{{url_for('repository', rarity='{{result[2]}}')}}">{{result[2]}}</a> | {{result[3]}}</pre>
         </div>
-        <img src="/static/image/{{result[6]}}" alt="Herb Illustration" id="main_image">
     </div>
     <div id="page">
+        <pre id="place">PLACE OF ORIGIN: {{result[4]}}</pre>
+        <p id="description"><strong>DESCRIPTION: </strong> {{result[5]}}</p>
+        <p id="description"><strong>MAIN USE:</strong> {{result[7]}}</p>
+        <p id="explanation"> {{result[8]}}</p>
     </div>
 
     {% endblock %}
