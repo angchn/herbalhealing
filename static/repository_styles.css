@@ -204,10 +204,10 @@ body {
 }
 
 td > a:first-child {
-  display: flex;
-  text-decoration: none;
-  color: inherit;
-  z-index: 0;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    z-index: 0;
 }
 
 #footer {

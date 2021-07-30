@@ -91,12 +91,12 @@
                 </tr>
                 {% for item in results %}
                 <tr id="herb_row">
-                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1" style="font-weight: bold;">{{item[1]}}</a></td>
-                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[2]}}</a></td>
-                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[3]}}</a></td>
-                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[4]}}</a></td>
-                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[5]}}</a></td>
-                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1">{{item[6]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1" style="font-weight: bold; outline: none;">{{item[1]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1" style="outline: none;">{{item[2]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1" style="outline: none;">{{item[3]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1" style="outline: none;">{{item[4]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1" style="outline: none;">{{item[5]}}</a></td>
+                    <td><a href="{{url_for('herb', id=item[0])}}" tabindex="-1" style="outline: none;">{{item[6]}}</a></td>
                 </tr>
                 {% endfor %}
             </table>

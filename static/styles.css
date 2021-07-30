@@ -130,18 +130,6 @@ body {
     color: #414a4c;
 }
 
-#categories a {
-    text-decoration: none;
-}
-
-#categories a:hover {
-    cursor: pointer;
-}
-
-#categories a:visited{
-    color: #414a4c;
-}
-
 #main_image {
     width: 400px;
     float: right;
@@ -164,11 +152,13 @@ body {
     color: #414a4c;
     font-style: oblique;
     line-height: 25px;
+    padding-bottom: 70px;
 }
 
 #page {
     width: 50%;
     margin-left: 10%;
+    margin-top: -50px;
 }
 
 .page_margin {
