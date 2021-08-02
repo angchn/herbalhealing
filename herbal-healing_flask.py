@@ -24,7 +24,7 @@ def home():
     #home page, where user is presented with links to other pages.
     return render_template("home.html")
 
-@app.route ("/repository")
+@app.route ("/repository") 
 def repository():
     #repository page, where all data are displayed in a table.
     cursor = get_db().cursor()
