@@ -18,7 +18,6 @@
             </div>
             <div class="menu"> <!-- menu bar -->
                 <a id="button_repository" href="{{url_for('repository')}}">REPOSITORY</a> <!-- repository button -->
-                <a id="button_gallery" href="{{url_for('gallery')}}">GALLERY</a> <!-- gallery button-->
                 <a id="button_about" href="{{url_for('about')}}">ABOUT</a> <!-- about button -->
                 <a id="button_contact" href="{{url_for('contact')}}">CONTACT</a> <!-- contact button-->
             </div>
@@ -46,13 +45,13 @@
             </form>
         </div>
         <h1 style="text-align: center; color: #506423; font-size: 26px; cursor: default;">or explore by</h1>
-        <h1 class="subheading">rarity</h1>
+        <h1 class="subheading">rarity</h1> <!-- redirects to respository, filtered by rarity-->
         <div class="filters">
                 <button class="filter_button" type="button"><a href="{{url_for('repository', rarity='common')}}">COMMON</a></button>
                 <button class="filter_button" type="button"><a href="{{url_for('repository', rarity='rare')}}">RARE</a></button>
                 <button class="filter_button" type="button"><a href="{{url_for('repository', rarity='unique')}}">UNIQUE</a></button>
         </div>
-        <h1 class="subheading" style="padding-top: 50px;">type</h1>
+        <h1 class="subheading" style="padding-top: 50px;">type</h1> <!-- redirects to respository, filtered by type-->
         <div class="filters">
                 <button class="filter_button" type="button"><a href="{{url_for('repository', type='flower')}}">FLOWER</a></button>
                 <button class="filter_button" type="button"><a href="{{url_for('repository', type='fruit')}}">FRUIT</a></button>
@@ -60,7 +59,7 @@
                 <button class="filter_button" type="button"><a href="{{url_for('repository', type='seed')}}">SEED</a></button>
                 <button class="filter_button" type="button"><a href="{{url_for('repository', type='root')}}">ROOT</a></button>
         </div>
-        <h1 class="subheading" style="padding-top: 50px;">use</h1>
+        <h1 class="subheading" style="padding-top: 50px;">use</h1> <!-- redirects to respository, filtered by use-->
         <div class="filters">
             <button class="filter_button" type="button" ><a href="{{url_for('repository', use='anxiety')}}">ANXIETY</a></button>
             <button class="filter_button" type="button"><a href="{{url_for('repository', use='fever')}}">FEVER</a></button>
@@ -76,10 +75,7 @@
             <button class="filter_button_hd" type="button"><a href="{{url_for('repository', use='wound healing')}}">WOUND HEALING</a></button>
         </div>
     </div>
-    <div>
-        <h1>gallery</h1>
-    </div>
-    <div id="footer">
+    <div id="footer"> <!-- footer -->
         <div id="footer_text">
             <div class="footer_name">
                 <h1 id="footer_title">HERBAL HEALING</h1>

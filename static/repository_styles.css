@@ -66,7 +66,7 @@ body {
     position: relative;
 }
 
-#button_about, #button_contact, #button_gallery {
+#button_about, #button_contact {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     border: none;
@@ -82,7 +82,7 @@ body {
     position: relative;
 }
 
-#button_about:hover, #button_contact:hover, #button_gallery:hover {
+#button_about:hover, #button_contact:hover {
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom-style: solid;

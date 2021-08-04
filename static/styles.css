@@ -65,7 +65,7 @@ body {
     position: relative;
 }
 
-.button_about, .button_contact, #button_gallery {
+.button_about, .button_contact {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     border: none;
@@ -81,7 +81,7 @@ body {
     position: relative;
 }
 
-#button_repository:hover, .button_about:hover, .button_contact:hover, #button_gallery:hover {
+#button_repository:hover, .button_about:hover, .button_contact:hover {
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom-style: solid;
@@ -373,4 +373,28 @@ body {
     cursor: default;
     background-color: #7d9758;
     font-size: 12px;
+}
+
+.error {
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: #7d9758;
+}
+
+.error_page {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.error_text{
+    margin-top: -50px;
+    font-weight: bold;
+    color: #414a4c;
+}
+
+.error_subtext{
+    color: #414a4c;
 }
