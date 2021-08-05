@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="error_page">
-        <i class="far fa-frown" style="font-family: Font Awesome 5 Free; font-size: 250px; color: #7d9758;"></i>
-        <h1 class="error">404</h1>
-        <p class="error_text">Page Not Found</p>
+        <i class="far fa-frown" style="font-family: Font Awesome 5 Free; font-size: 250px; color: #7d9758;"></i> <!-- frown face icon -->
+        <h1 class="error">404</h1> 
+        <p class="error_text">Page Not Found</p> <!-- title -->
         <p class="error_subtext">The page you are looking for does not exist or another error has occured.</p>
-        <p>Click <a>here</a> to go back to the home page.</p>
+        <p>Return <a href="{{url_for('home')}}" id="error_link">home</a>.</p> <!-- link back to home page -->
     </div>
 </body>
 </html>

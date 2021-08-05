@@ -28,7 +28,7 @@
         <div id="sort"> <!-- sorting bar -->
             <div id="filter">
                 <div class="filter_button">
-                    <a class="filter_name">NAME</a>
+                    <a class="filter_name">NAME</a> <!-- filter by name -->
                     <i class="fa fa-caret-down" style="color: #414a4c;"></i>
                     <div class="filter_content">
                         <a href="{{url_for('repository', name='a-z')}}">A-Z</a>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="filter_button">
-                    <a class="filter_name">RARITY</a>
+                    <a class="filter_name">RARITY</a> <!-- filter by rarity -->
                     <i class="fa fa-caret-down" style="color: #414a4c;"></i>
                     <div class="filter_content">
                         <a href="{{url_for('repository', rarity='common')}}">COMMON</a>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="filter_button">
-                    <a class="filter_name">TYPE</a>
+                    <a class="filter_name">TYPE</a> <!-- fitler by type -->
                     <i class="fa fa-caret-down" style="color: #414a4c;"></i>
                     <div class="filter_content">
                         <a href="{{url_for('repository', type='flower')}}">FLOWER</a>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="filter_button">
-                    <a class="filter_name">MAIN USE</a>
+                    <a class="filter_name">MAIN USE</a> <!-- filter by main use -->
                     <i class="fa fa-caret-down" style="color: #414a4c;"></i>
                     <div class="filter_content">
                         <a href="{{url_for('repository', use='anxiety')}}">ANXIETY</a>
@@ -101,13 +101,13 @@
             </table>
         </div>
     </div>
-    <div id="footer">
+    <div id="footer"> <!-- footer -->
         <div id="footer_text">
             <div class="footer_name">
                 <h1 id="footer_title">HERBAL HEALING</h1>
                 <p style="color: #c7c69c; margin-top: -10px; cursor: default;">The knowledge, use and delight of herbs in everyday life.</p>
             </div>
-            <div class="footer_column" style="margin-left: 30%; margin-top: 2%;">
+            <div class="footer_column" style="margin-left: 30%; margin-top: 2%;"> <!-- redirecting links -->
                 <a class="footer_button" href="{{url_for('home')}}">HOME</a>
                 <a class="footer_button" href="{{url_for('repository')}}">REPOSITORY</a>
             </div>
@@ -119,7 +119,7 @@
                 <a class="footer_button" href="https://github.com/angelaychen/website" target="_blank" rel="noopener noreferrer">GITHUB</a>
             </div>
         </div>
-        <p id="copyright">© 2021 Angela Chen. All Rights Reserved.</p>
+        <p id="copyright">© 2021 Angela Chen. All Rights Reserved.</p> <!-- copyright -->
     </div>
 </body>
 </html>

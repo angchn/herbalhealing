@@ -152,7 +152,7 @@ body {
     color: #414a4c;
     font-style: oblique;
     line-height: 25px;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
 }
 
 #page {
@@ -389,12 +389,27 @@ body {
     margin-top: 100px;
 }
 
-.error_text{
+.error_text {
     margin-top: -50px;
     font-weight: bold;
     color: #414a4c;
 }
 
-.error_subtext{
+.error_subtext {
     color: #414a4c;
+}
+
+#error_link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #7d9758;
+    transition-duration: 0.2s;
+}
+
+#error_link:hover {
+    font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
 }
