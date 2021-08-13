@@ -101,11 +101,6 @@ def herb(id):
     result = cursor.fetchone()
     return render_template("herb.html", result=result)
 
-@app.route ("/gallery")
-def gallery():
-    #gallery page, displays photos of herbs.
-    return render_template("gallery.html")
-
 @app.route ("/about")
 def about():
     #about page, provides user with more information about the website.
